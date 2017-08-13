@@ -1,0 +1,70 @@
+﻿  Main.c
+c:\users\debyst\source\repos\helloworldrep\hellofromc\file1.c(24): warning C4013: 'maxi' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\file1.c(10): warning C4101: 'c': unreferenced local variable
+c:\users\debyst\source\repos\helloworldrep\hellofromc\file1.c(11): warning C4101: 'd': unreferenced local variable
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(16): warning C4311: 'type cast': pointer truncation from 'char *' to 'int'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(11): warning C4045: 'zliste': array bounds overflow
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(26): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(27): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 2 has type '::size_t'
+  c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(27): note: consider using '%zi' in the format string
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(42): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
+  c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(42): note: consider using '%lli' in the format string
+  c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(42): note: consider using '%Ii' in the format string
+  c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(42): note: consider using '%I64i' in the format string
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(50): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(51): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(52): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type '::size_t'
+  c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(52): note: consider using '%zd' in the format string
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(103): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(105): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+  FILE2.c
+  FILE1.c
+c:\users\debyst\source\repos\helloworldrep\hellofromc\file1.c(24): warning C4013: 'maxi' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\file1.c(26): warning C4013: 'printf_s' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\file1.c(10): warning C4101: 'c': unreferenced local variable
+c:\users\debyst\source\repos\helloworldrep\hellofromc\file1.c(11): warning C4101: 'd': unreferenced local variable
+  consoleOps.c
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(4): warning C4013: 'printf' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(6): error C2065: 'EOF': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(16): warning C4311: 'type cast': pointer truncation from 'char *' to 'int'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(26): warning C4013: 'scanf' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(51): warning C4013: 'strchr' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(51): error C2113: '-': pointer can only be subtracted from another pointer
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(52): warning C4013: 'strlen' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(96): error C2065: 'FILE': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(96): error C2065: 'pFile': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(96): warning C4552: '*': operator has no effect; expected operator with side-effect
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(98): error C2065: 'clock_t': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(98): error C2146: syntax error: missing ';' before identifier 't1'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(98): error C2065: 't1': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(98): error C2065: 't2': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(105): error C2065: 'pFile': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(105): warning C4013: 'fopen' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(106): error C2065: 't1': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(106): warning C4013: 'clock' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(107): error C2065: 't1': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(108): error C2065: 'pFile': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(108): error C2065: 'NULL': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(108): warning C4013: 'perror' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(111): warning C4013: 'feof' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(111): error C2065: 'pFile': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(113): warning C4013: 'fgets' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(113): error C2065: 'pFile': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(113): error C2065: 'NULL': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(114): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(115): error C2065: 'NULL': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(115): warning C4047: '!=': 'char *' differs in levels of indirection from 'int'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(118): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(120): warning C4013: 'fputs' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(120): error C2065: 'stdout': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(122): warning C4013: 'fclose' undefined; assuming extern returning int
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(122): error C2065: 'pFile': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(124): error C2065: 't2': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(125): error C2065: 't2': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(125): error C2065: 't1': undeclared identifier
+c:\users\debyst\source\repos\helloworldrep\hellofromc\consoleops.c(11): warning C4045: 'zliste': array bounds overflow
+  Generating Code...

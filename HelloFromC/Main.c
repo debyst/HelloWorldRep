@@ -19,6 +19,8 @@
 
 extern int maxi(int a, int b);  // Function prototype     
 
+extern void changeVeloColor(struct velo *v, enum color c);
+
 extern int testExternKeyword();
 extern int testPointerNfiles();
 
@@ -27,6 +29,9 @@ void main()
 	printf("Hello From Visual Studio\n");
 
 	testExternKeyword();
+
+	testStructsNenums();
+
 	testPointerNfiles();
 
 	
