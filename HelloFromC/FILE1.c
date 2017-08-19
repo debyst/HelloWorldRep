@@ -8,6 +8,8 @@ FILE1.C - main function
 #define TEST_PI 3.175
 #endif
 
+//here i just add some comments to provoke a conflict
+
 int testExternKeyword()                       // Function definition         
 {                                //  for main function          
 	int c;                       // Definitions for      
