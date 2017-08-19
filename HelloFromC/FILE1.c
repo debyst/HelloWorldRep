@@ -4,6 +4,9 @@ FILE1.C - main function
 #define ONE     1  
 #define TWO     2  
 #define THREE   3  
+#ifndef TEST_PI
+#define TEST_PI 3.175
+#endif
 
 int testExternKeyword()                       // Function definition         
 {                                //  for main function          
@@ -16,6 +19,9 @@ int testExternKeyword()                       // Function definition
 								 //  defined elsewhere          
 	static int v;                // Definition of variable      
 								 //  with continuous lifetime   
+
+	// just print TEST_PI
+	printf_s("TEST_PI=%f\n",TEST_PI);
 
 	int w = ONE, x = TWO, y = THREE;
 	int z = 0;
