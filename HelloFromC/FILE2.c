@@ -25,6 +25,11 @@ typedef struct  {
 	char name[];
 } slackline ;
 
+typedef slackline *pSlackline; // define the pointer type pSlackline of type struct slackline *
+
+typedef int II2I(int, int); // we define a function type II2I
+
+II2I maxi; // we declare the function maxi of type II2I
 
 int maxi(int a, int b)          // Note formal parameters are     
 							   //  included in function header   
@@ -36,6 +41,12 @@ int maxi(int a, int b)          // Note formal parameters are
 }
 
 
+typedef void fv(int), (*pfv)(int);  /* typedef declarations */
+
+void(*signal(int, void(*) (int))) (int);
+fv *signal(int, fv *);   /* Uses typedef type */
+pfv signal(int, pfv);    /* Uses typedef type */
+
 void changeVeloColor(struct velo *v, enum color c)
 {
 	printf("changed color of %s from: %i -> %i\n", (*v).name, (*v).vcolor, c); ;
@@ -46,9 +57,12 @@ void changeVeloColor(struct velo *v, enum color c)
 
 int testStructsNenums()
 {
-
+	struct velo velo = { 1,blue,mtb,"velo" }; // the name of the struct is located in a different namespace 
+												// as the name of the struct, thus they can be named the same.
 	struct velo karl = { 0,red,singlespeed,"karl" };
-	changeVeloColor(&karl, blue);
+	struct velo *pKarl; // declare the pointer of karl
+	pKarl = &karl;
+	changeVeloColor(pKarl, blue);
 	//karl.id = 3;
 	karl.vtype = mtb;
 	karl.vcolor = white;
@@ -63,6 +77,7 @@ int testStructsNenums()
 	mtime_t = mktime(mtime);
 
 	slackline matrix = { 0,red,jumpline,time(&mtime_t),"matrix"};
+	pSlackline pMatrix = &matrix; // define the pointer of type pSlackline of the struct matrix
 	printf("slackline matrix = id:%i / color:%i / stype:%i / buytime:%s / name:%s\n",
 		matrix.id,matrix.scolor,matrix.stype,ctime(&matrix.buytime),matrix.name);
 
