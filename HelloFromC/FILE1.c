@@ -5,6 +5,8 @@ FILE1.C - main function
 #define TWO     2  
 #define THREE   3  
 
+//here i just add some comments to provoke a conflict
+
 int testExternKeyword()                       // Function definition         
 {                                //  for main function          
 	int c;                       // Definitions for      
