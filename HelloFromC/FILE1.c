@@ -4,6 +4,9 @@ FILE1.C - main function
 #define ONE     1  
 #define TWO     2  
 #define THREE   3  
+#ifndef TEST_PI
+#define TEST_PI 3.175
+#endif
 
 int testExternKeyword()                       // Function definition         
 {                                //  for main function          
