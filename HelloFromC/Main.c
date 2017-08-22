@@ -24,6 +24,7 @@ extern void changeVeloColor(struct velo *v, enum color c);
 extern int testExternKeyword();
 extern int testPointerNfiles();
 extern void testFunctionPointer();
+extern void testLookupTable();
 
 void main()
 {
@@ -36,5 +37,7 @@ void main()
 	//testPointerNfiles();
 
 	testFunctionPointer();
+
+	testLookupTable();
 	
 }

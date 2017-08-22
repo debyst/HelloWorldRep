@@ -3,6 +3,7 @@ FILE2.C - definition of max function
 ****************************************************************/
 
 #include <time.h>
+#include <stdint.h>
 
 int u = 34;
 
@@ -83,3 +84,65 @@ int testStructsNenums()
 
 	return 0;
 }
+
+
+//declare a function that calls the lookup table
+uint8_t getSigma(uint8_t cn0, uint8_t eleDeg, uint8_t speedMpS)
+{
+	static const uint8_t lookup[2][3][2] =  // keyword __flash does not exist here
+	{
+		1,2,   // [last][mid][first] -> first: horizontal. mid: vertical. last: up.
+		3,4, 
+		5,6,
+		10,11, 
+		12,13, 
+		14,15
+	};
+	if (cn0 >= 0 && cn0 < 20)
+	{
+		cn0 = 0;
+	}
+	else if (cn0 >= 20 && cn0 < 50)
+	{
+		cn0 = 1;
+	}
+	if (eleDeg >= 0 && eleDeg < 20)
+	{
+		eleDeg = 0;
+	}
+	else if (eleDeg >= 20 && eleDeg < 30)
+	{
+		eleDeg = 1;
+	}
+	else if (eleDeg >= 30 && eleDeg < 90)
+	{
+		eleDeg = 2;
+	}
+	if (speedMpS >= 0 && speedMpS < 20)
+	{
+		speedMpS = 0;
+	}
+	else if (speedMpS >= 10 && speedMpS < 200)
+	{
+		speedMpS = 1;
+	}
+	// now look up the mapped values
+	if (cn0 <= 1 && eleDeg <= 2 && speedMpS <= 1)
+	{
+		return lookup[cn0][eleDeg][speedMpS];
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+void testLookupTable()
+{
+	uint8_t cn0 = 5;
+	uint8_t eleDeg = 20;
+	uint8_t speedMpS = 10;
+	printf("cn0:%i,eleDeg:%i,speedMpS:%i ==> Sigma=%i\n", cn0, eleDeg, speedMpS,
+		getSigma(cn0, eleDeg, speedMpS));
+}
+
